@@ -49,12 +49,12 @@ export default function Sidebar({
 						className="h-[30px] w-[30px] object-contain"
 					/>
 				) : (
-					<div className="flex h-[30px] w-[30px] shrink-0 items-center justify-center bg-brand-gold font-serif text-base font-bold text-brand-black">
+					<div className="flex h-[30px] w-[30px] shrink-0 items-center justify-center bg-brand-gold text-base font-bold text-brand-black">
 						{title.slice(0, 1)}
 					</div>
 				)}
 				<div>
-					<div className="font-serif text-base font-bold leading-tight text-white">
+					<div className="text-base font-bold leading-tight text-white">
 						{title}
 					</div>
 					<div className="text-[0.65rem] uppercase tracking-[0.1em] text-[#777]">
@@ -66,7 +66,7 @@ export default function Sidebar({
 			{/* User Info */}
 			{user && (
 				<div className="flex shrink-0 items-center gap-2.5 border-b border-brand-border px-4 py-3">
-					<div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-brand-gold font-serif text-sm font-bold text-brand-black">
+					<div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-brand-gold text-sm font-bold text-brand-black">
 						{getInitials(user.full_name)}
 					</div>
 					<div>

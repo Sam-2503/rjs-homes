@@ -61,7 +61,7 @@ export default function BuilderClients() {
 		<>
 			{/* Topbar */}
 			<div className="flex items-center justify-between border-b border-black/10 bg-[rgba(224,234,242,0.3)] px-6 py-4">
-				<div className="font-serif text-2xl font-semibold text-[#1f2a34]">
+				<div className="text-2xl font-semibold text-[#1f2a34]">
 					Clients
 				</div>
 				<div className="text-xs text-[#888888]">
@@ -208,7 +208,7 @@ export default function BuilderClients() {
 									{/* Client stats */}
 									<div className="mb-4 grid grid-cols-3 gap-3 border-b border-black/10 pb-4">
 										<div className="text-center">
-											<div className="font-serif text-2xl text-brand-gold">
+											<div className="text-2xl text-brand-gold">
 												{clientProjects.length}
 											</div>
 											<div className="text-[0.7rem] text-[#888888]">
@@ -216,7 +216,7 @@ export default function BuilderClients() {
 											</div>
 										</div>
 										<div className="text-center">
-											<div className="font-serif text-2xl text-[#27ae60]">
+											<div className="text-2xl text-[#27ae60]">
 												{activeProjects}
 											</div>
 											<div
@@ -229,7 +229,7 @@ export default function BuilderClients() {
 											</div>
 										</div>
 										<div className="text-center">
-											<div className="font-serif text-2xl text-[#4caf50]">
+											<div className="text-2xl text-[#4caf50]">
 												{completedProjects}
 											</div>
 											<div className="text-[0.7rem] text-[#888888]">

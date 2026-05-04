@@ -63,7 +63,7 @@ export default function Modal({
 			>
 				<div className="flex shrink-0 items-center justify-between gap-4 border-b border-brand-border bg-[rgba(200,151,31,0.03)] px-5 py-5 sm:px-6">
 					{title && (
-						<h2 className="text-2xl font-semibold text-white font-serif">
+						<h2 className="text-2xl font-semibold text-white">
 							{title}
 						</h2>
 					)}

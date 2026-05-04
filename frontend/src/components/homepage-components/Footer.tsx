@@ -9,7 +9,7 @@ export default function Footer() {
 							alt="RJS Homes logo"
 							className="h-10 w-10 rounded-full border border-[#d5b47a]/50 bg-[radial-gradient(circle_at_30%_25%,#e4cda2_0%,#b68945_60%,#7a5a2e_100%)]"
 						/>
-						<div className="font-serif text-xl font-bold text-gray-900">
+						<div className="text-xl font-bold text-gray-900">
 							RJS Homes
 						</div>
 					</div>

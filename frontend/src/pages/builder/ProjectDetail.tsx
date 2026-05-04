@@ -352,7 +352,7 @@ export default function BuilderProjectDetail() {
 		return (
 			<>
 				<div className="flex items-center justify-between border-b border-black/10 bg-[rgba(224,234,242,0.3)] px-6 py-4">
-					<div className="font-serif text-2xl font-semibold text-[#1f2a34]">
+					<div className="text-2xl font-semibold text-[#1f2a34]">
 						Loading Project…
 					</div>
 				</div>
@@ -391,7 +391,7 @@ export default function BuilderProjectDetail() {
 			{/* Topbar */}
 			<div className="flex items-center justify-between border-b border-black/10 bg-[rgba(224,234,242,0.3)] px-6 py-4">
 				<div
-					className="flex items-center gap-2 font-serif text-2xl font-semibold text-[#1f2a34]"
+					className="flex items-center gap-2 text-2xl font-semibold text-[#1f2a34]"
 					style={{ display: "flex", alignItems: "center", gap: 10 }}
 				>
 					<span
@@ -425,7 +425,7 @@ export default function BuilderProjectDetail() {
 				{/* KPIs */}
 				<div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
 					<div className="rounded-md border border-black/10 border-t-2 border-t-[#27ae60] bg-[rgba(224,234,242,0.3)] p-4">
-						<div className="font-serif text-3xl text-[#4caf50]">
+						<div className="text-3xl text-[#4caf50]">
 							{project.overall_progress}%
 						</div>
 						<div className="mt-1 text-sm font-medium text-[#1f2a34]">
@@ -433,7 +433,7 @@ export default function BuilderProjectDetail() {
 						</div>
 					</div>
 					<div className="rounded-md border border-black/10 border-t-2 border-t-brand-gold bg-[rgba(224,234,242,0.3)] p-4">
-						<div className="font-serif text-3xl text-[#f59e0b]">
+						<div className="text-3xl text-[#f59e0b]">
 							{updates.length}
 						</div>
 						<div className="mt-1 text-sm font-medium text-[#1f2a34]">
@@ -441,7 +441,7 @@ export default function BuilderProjectDetail() {
 						</div>
 					</div>
 					<div className="rounded-md border border-black/10 border-t-2 border-t-brand-gold bg-[rgba(224,234,242,0.3)] p-4">
-						<div className="font-serif text-3xl text-[#f59e0b]">
+						<div className="text-3xl text-[#f59e0b]">
 							{materials.length}
 						</div>
 						<div className="mt-1 text-sm font-medium text-[#1f2a34]">
@@ -449,7 +449,7 @@ export default function BuilderProjectDetail() {
 						</div>
 					</div>
 					<div className="rounded-md border border-black/10 border-t-2 border-t-brand-gold bg-[rgba(224,234,242,0.3)] p-4">
-						<div className="font-serif text-3xl text-[#f59e0b]">
+						<div className="text-3xl text-[#f59e0b]">
 							₹{(totalCost / 1000).toFixed(0)}K
 						</div>
 						<div className="mt-1 text-sm font-medium text-[#1f2a34]">
@@ -1206,7 +1206,7 @@ export default function BuilderProjectDetail() {
 					<div className="h-1 w-full bg-[#fbbf24]" />
 					<div className="p-5">
 						<div className="mb-4 flex items-center justify-between">
-							<div className="font-serif text-2xl text-[#1f2a34]">
+							<div className="text-2xl text-[#1f2a34]">
 								Post Update
 							</div>
 							<button
@@ -1415,7 +1415,7 @@ export default function BuilderProjectDetail() {
 					<div className="h-1 w-full bg-[#fbbf24]" />
 					<div className="p-5">
 						<div className="mb-4 flex items-center justify-between">
-							<div className="font-serif text-2xl text-[#1f2a34]">
+							<div className="text-2xl text-[#1f2a34]">
 								Log Material
 							</div>
 							<button

@@ -202,7 +202,7 @@ export default function Login() {
 										<div className="text-[11px] uppercase tracking-[0.16em] text-[#5f6c79]">
 											Registration status
 										</div>
-										<h2 className="mt-3 font-serif text-[clamp(2rem,2.8vw,2.6rem)] font-semibold text-[#1f2a34]">
+										<h2 className="mt-3 text-[clamp(2rem,2.8vw,2.6rem)] font-semibold text-[#1f2a34]">
 											Registration submitted.
 										</h2>
 										<p className="mt-3 text-sm leading-7 text-[#556271]">
@@ -242,7 +242,7 @@ export default function Login() {
 												? "Sign in"
 												: "Register"}
 										</div>
-										<h2 className="mt-3 font-serif text-[clamp(2rem,2.8vw,2.8rem)] font-semibold text-[#1f2a34]">
+										<h2 className="mt-3 text-[clamp(2rem,2.8vw,2.8rem)] font-semibold text-[#1f2a34]">
 											{mode === "login"
 												? "Welcome back."
 												: "Create account."}

@@ -95,7 +95,7 @@ export default function Projects() {
 						<div className="text-[11px] uppercase tracking-[0.18em] text-[#c9aa72]">
 							Featured Portfolio
 						</div>
-						<h2 className="mt-2 font-serif text-[clamp(2rem,3.7vw,3.2rem)] text-[#f4eee4]">
+						<h2 className="mt-2 text-[clamp(2rem,3.7vw,3.2rem)] text-[#f4eee4]">
 							Projects Built with Technical Discipline
 						</h2>
 					</div>
@@ -146,7 +146,7 @@ export default function Projects() {
 								<div className="rounded-lg border border-white/10 bg-[linear-gradient(130deg,rgba(201,170,114,0.2)_0%,rgba(43,74,108,0.25)_100%)] px-3 py-2 text-[11px] uppercase tracking-[0.16em] text-[#e6d5b6]">
 									{project.location}
 								</div>
-								<h3 className="mt-4 font-serif text-2xl text-[#f4eee3]">
+								<h3 className="mt-4 text-2xl text-[#f4eee3]">
 									{project.name}
 								</h3>
 								<p className="mt-2 text-sm leading-7 text-[#aeb9ca]">

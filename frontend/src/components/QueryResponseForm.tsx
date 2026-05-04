@@ -94,7 +94,7 @@ export default function QueryResponseForm({
 	return (
 		<div className="rounded-lg border border-brand-gold border-l-4 border-l-brand-gold bg-brand-card">
 			<div className="mb-5 border-b border-brand-border pb-5">
-				<h3 className="mb-3 font-serif text-lg font-semibold text-white">
+				<h3 className="mb-3 text-lg font-semibold text-white">
 					Respond to Question
 				</h3>
 				<div className="text-base text-brand-muted-light">

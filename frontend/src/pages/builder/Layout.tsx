@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Outlet, NavLink, useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
 import { cn } from "../../utils/cn";
@@ -16,11 +16,29 @@ export default function BuilderLayout() {
 	const { user, logout } = useAuth();
 	const navigate = useNavigate();
 	const [projects, setProjects] = useState<Project[]>([]);
+	const [profileMenuOpen, setProfileMenuOpen] = useState(false);
+	const profileMenuRef = useRef<HTMLDivElement | null>(null);
 
 	useEffect(() => {
 		api.get<Project[]>("/api/projects/")
 			.then((r) => setProjects(r.data))
 			.catch(() => {});
+	}, []);
+
+	useEffect(() => {
+		const handleClickOutside = (event: MouseEvent) => {
+			if (
+				profileMenuRef.current &&
+				!profileMenuRef.current.contains(event.target as Node)
+			) {
+				setProfileMenuOpen(false);
+			}
+		};
+
+		document.addEventListener("mousedown", handleClickOutside);
+		return () => {
+			document.removeEventListener("mousedown", handleClickOutside);
+		};
 	}, []);
 
 	const initials =
@@ -85,21 +103,6 @@ export default function BuilderLayout() {
 							</div>
 							<div className="pl-8 text-[10px] uppercase tracking-[0.12em] text-[#5d6a78]">
 								{isAdmin ? "Admin Portal" : "Builder Portal"}
-							</div>
-						</div>
-					</div>
-
-					{/* Logged-in user */}
-					<div className="mx-4 mb-5 flex items-center gap-3 rounded-xl border border-black/10 bg-[#f7f8fa] p-3">
-						<div className="grid h-10 w-10 place-items-center rounded-full bg-[#1f2a34] font-semibold text-white">
-							{initials}
-						</div>
-						<div>
-							<div className="text-sm font-medium text-[#1f2a34]">
-								{user?.full_name}
-							</div>
-							<div className="text-xs uppercase text-[#5d6a78]">
-								{user?.role}
 							</div>
 						</div>
 					</div>
@@ -185,20 +188,47 @@ export default function BuilderLayout() {
 							{n.label}
 						</NavLink>
 					))}
-
-					<div className="mt-auto border-t border-black/10 p-4">
-						<button
-							className="w-full rounded-lg border border-black/10 bg-[#f7f8fa] px-3 py-2 text-sm font-medium text-[#475462] transition hover:bg-black/5 hover:text-[#1f2a34]"
-							onClick={doLogout}
-						>
-							Sign Out
-						</button>
-					</div>
 				</div>
 
 				{/* ── MAIN ── */}
-				<div className="min-w-0 flex-1 overflow-x-hidden bg-[#eef3f6]">
-					<Outlet />
+				<div className="min-w-0 flex-1 bg-[#eef3f6]">
+					<div className="sticky top-0 z-10 flex items-center justify-end border-b border-black/10 bg-[#f8fafb]/90 px-6 py-3 backdrop-blur-sm">
+						<div className="relative" ref={profileMenuRef}>
+							<button
+								type="button"
+								onClick={() =>
+									setProfileMenuOpen((prev) => !prev)
+								}
+								className="grid h-10 w-10 place-items-center rounded-full bg-[#1f2a34] font-semibold text-white ring-1 ring-black/10 transition hover:bg-[#2a3641]"
+								aria-label="Open profile menu"
+							>
+								{initials}
+							</button>
+
+							{profileMenuOpen && (
+								<div className="absolute right-0 top-12 w-56 rounded-xl border border-black/10 bg-white p-3 shadow-[0_12px_30px_rgba(31,42,52,0.15)]">
+									<div className="border-b border-black/10 pb-3">
+										<div className="truncate text-sm font-semibold text-[#1f2a34]">
+											{user?.full_name}
+										</div>
+										<div className="mt-1 text-xs uppercase tracking-[0.08em] text-[#5d6a78]">
+											{user?.role}
+										</div>
+									</div>
+									<button
+										type="button"
+										onClick={doLogout}
+										className="mt-3 w-full rounded-lg border border-black/10 bg-[#f7f8fa] px-3 py-2 text-sm font-medium text-[#475462] transition hover:bg-black/5 hover:text-[#1f2a34]"
+									>
+										Sign Out
+									</button>
+								</div>
+							)}
+						</div>
+					</div>
+					<div className="min-h-0 overflow-x-hidden">
+						<Outlet />
+					</div>
 				</div>
 			</div>
 		</>

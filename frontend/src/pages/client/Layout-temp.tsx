@@ -38,7 +38,7 @@ export default function ClientLayout() {
 					/>
 
 					<div>
-						<div className="font-serif text-lg font-semibold text-[#f5efe2]">
+						<div className="text-lg font-semibold text-[#f5efe2]">
 							RJS Homes
 						</div>
 						<div className="text-[10px] uppercase tracking-[0.12em] text-[#a9b7c8]">

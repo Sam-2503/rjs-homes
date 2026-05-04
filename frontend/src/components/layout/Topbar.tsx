@@ -23,7 +23,7 @@ export default function Topbar({ title, subtitle, actions }: TopbarProps) {
 		<div className="flex shrink-0 items-center justify-between border-b border-brand-border bg-brand-card px-6 py-5">
 			<div className="flex-1">
 				{title && (
-					<h1 className="font-serif text-[1.75rem] font-semibold text-white">
+					<h1 className="text-[1.75rem] font-semibold text-white">
 						{title}
 					</h1>
 				)}
@@ -38,7 +38,7 @@ export default function Topbar({ title, subtitle, actions }: TopbarProps) {
 				)}
 				{user && (
 					<div className="flex items-center gap-3">
-						<div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-brand-gold font-serif text-sm font-bold text-brand-black">
+						<div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-brand-gold text-sm font-bold text-brand-black">
 							{getInitials(user.full_name)}
 						</div>
 						<div>

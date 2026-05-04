@@ -59,11 +59,11 @@ export default function ClientProgress() {
 
 	return (
 		<>
-			<div className="border-b border-black/10 bg-[linear-gradient(160deg,rgba(243,247,250,0.4)_0%,rgba(238,243,246,0.4)_100%)] px-6 py-6 backdrop-blur-sm">
-				<div className="font-serif text-3xl font-semibold text-[#1f2a34]">
+			<div className="border-b border-black/10 bg-[#f8fafb] px-6 py-8 backdrop-blur-sm">
+				<h1 className="text-4xl font-bold text-[#1f2a34]">
 					Progress Tracking
-				</div>
-				<p className="mt-1 text-sm text-[#5d6a78]">
+				</h1>
+				<p className="mt-2 text-[#5d6a78]">
 					Monitor your project progress
 				</p>
 			</div>
@@ -101,7 +101,7 @@ export default function ClientProgress() {
 											{p.location ?? "Location TBD"}
 										</div>
 									</div>
-									<span className="font-serif text-2xl font-semibold text-[#f59e0b]">
+									<span className="text-2xl font-semibold text-[#f59e0b]">
 										{p.overall_progress}%
 									</span>
 								</div>

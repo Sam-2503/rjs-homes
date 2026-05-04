@@ -108,7 +108,7 @@ export default function BuilderProjects() {
 		<>
 			{/* Topbar */}
 			<div className="flex items-center justify-between border-b border-black/10 bg-[rgba(224,234,242,0.3)] px-6 py-4">
-				<div className="font-serif text-2xl font-semibold text-[#1f2a34]">
+				<div className="text-2xl font-semibold text-[#1f2a34]">
 					Projects
 				</div>
 				<div className="flex items-center gap-3">

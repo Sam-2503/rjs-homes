@@ -52,7 +52,7 @@ export default function BuilderDashboard() {
 		<>
 			{/* Topbar */}
 			<div className="border-b border-black/10 bg-[#f8fafb] px-6 py-6 backdrop-blur-sm">
-				<div className="font-serif text-3xl font-semibold text-[#1f2a34]">
+				<div className="text-3xl font-semibold text-[#1f2a34]">
 					Dashboard
 				</div>
 			</div>
@@ -64,7 +64,7 @@ export default function BuilderDashboard() {
 						<div className="text-sm uppercase tracking-[0.12em] text-[#5d6a78]">
 							Total Projects
 						</div>
-						<div className="mt-3 font-serif text-4xl font-semibold text-[#1f2a34]">
+						<div className="mt-3 text-4xl font-semibold text-[#1f2a34]">
 							{total}
 						</div>
 						<div className="mt-2 text-xs text-[#8b9ba9]">
@@ -75,7 +75,7 @@ export default function BuilderDashboard() {
 						<div className="text-sm uppercase tracking-[0.12em] text-[#5d6a78]">
 							Active Builds
 						</div>
-						<div className="mt-3 font-serif text-4xl font-semibold text-[#1f2a34]">
+						<div className="mt-3 text-4xl font-semibold text-[#1f2a34]">
 							{active}
 						</div>
 						<div className="mt-2 text-xs text-[#8b9ba9]">
@@ -86,7 +86,7 @@ export default function BuilderDashboard() {
 						<div className="text-sm uppercase tracking-[0.12em] text-[#5d6a78]">
 							Completed
 						</div>
-						<div className="mt-3 font-serif text-4xl font-semibold text-[#1f2a34]">
+						<div className="mt-3 text-4xl font-semibold text-[#1f2a34]">
 							{completed}
 						</div>
 						<div className="mt-2 text-xs text-[#8b9ba9]">
@@ -97,7 +97,7 @@ export default function BuilderDashboard() {
 						<div className="text-sm uppercase tracking-[0.12em] text-[#5d6a78]">
 							Avg Progress
 						</div>
-						<div className="mt-3 font-serif text-4xl font-semibold text-[#1f2a34]">
+						<div className="mt-3 text-4xl font-semibold text-[#1f2a34]">
 							{avgProg}%
 						</div>
 						<div className="mt-2 text-xs text-[#8b9ba9]">

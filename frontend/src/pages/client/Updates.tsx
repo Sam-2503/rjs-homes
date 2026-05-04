@@ -48,19 +48,19 @@ export default function ClientUpdates() {
 	});
 
 	return (
-		<div className="flex flex-col gap-6 px-6 py-8 animate-fade-up">
-			<div className="border-b border-black/10 bg-[linear-gradient(160deg,rgba(243,247,250,0.4)_0%,rgba(238,243,246,0.4)_100%)] mb-2 px-0 py-6 backdrop-blur-sm">
-				<div className="font-serif text-3xl font-semibold text-[#1f2a34]">
+		<>
+			<div className="border-b border-black/10 bg-[#f8fafb] px-6 py-8 backdrop-blur-sm">
+				<h1 className="text-4xl font-bold text-[#1f2a34]">
 					Project Updates
-				</div>
-				<p className="mt-1 text-sm text-[#5d6a78]">
+				</h1>
+				<p className="mt-2 text-[#5d6a78]">
 					View-only project progress updates
 				</p>
 			</div>
 
-			<div className="flex flex-col gap-6">
+			<div className="animate-fade-up space-y-6 px-6 py-8">
 				<div className="rounded-2xl border border-black/10 bg-[rgba(224,234,242,0.3)] p-5 backdrop-blur-sm">
-					<div className="mb-4 border-b border-black/10 pb-4 font-serif text-lg font-semibold text-[#1f2a34]">
+					<div className="mb-4 border-b border-black/10 pb-4 text-lg font-semibold text-[#1f2a34]">
 						Filter Updates
 					</div>
 					<div>
@@ -122,7 +122,7 @@ export default function ClientUpdates() {
 										●
 									</div>
 									<div className="min-w-0 flex-1">
-										<div className="font-serif text-lg font-semibold text-[#1f2a34]">
+										<div className="text-lg font-semibold text-[#1f2a34]">
 											{u.title}
 										</div>
 										{u.description && (
@@ -165,6 +165,6 @@ export default function ClientUpdates() {
 					</div>
 				)}
 			</div>
-		</div>
+		</>
 	);
 }

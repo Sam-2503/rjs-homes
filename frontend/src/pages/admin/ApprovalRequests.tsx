@@ -106,7 +106,7 @@ export default function ApprovalRequests() {
 		<div className="flex flex-col gap-6 p-6 max-md:p-4">
 			<div className="flex flex-col gap-4">
 				<div className="flex flex-col gap-2">
-					<h1 className="font-serif text-[1.75rem] font-semibold text-[#1f2a34] max-md:text-2xl">
+					<h1 className="text-[1.75rem] font-semibold text-[#1f2a34] max-md:text-2xl">
 						Builder Approval Requests
 					</h1>
 					<p className="text-sm text-[#5d6a78]">
@@ -116,7 +116,7 @@ export default function ApprovalRequests() {
 
 				<div className="grid gap-4 [grid-template-columns:repeat(auto-fit,minmax(180px,1fr))] max-md:grid-cols-1">
 					<div className="flex flex-col gap-3 rounded-lg border border-black/10 bg-[rgba(224,234,242,0.3)] p-4 text-center">
-						<div className="font-serif text-2xl font-bold text-[#1f2a34]">
+						<div className="text-2xl font-bold text-[#1f2a34]">
 							{pendingCount}
 						</div>
 						<div className="text-xs font-semibold uppercase tracking-[0.05em] text-[#5d6a78]">
@@ -124,7 +124,7 @@ export default function ApprovalRequests() {
 						</div>
 					</div>
 					<div className="flex flex-col gap-3 rounded-lg border border-black/10 bg-[rgba(224,234,242,0.3)] p-4 text-center">
-						<div className="font-serif text-2xl font-bold text-[#1f2a34]">
+						<div className="text-2xl font-bold text-[#1f2a34]">
 							{approvedCount}
 						</div>
 						<div className="text-xs font-semibold uppercase tracking-[0.05em] text-[#5d6a78]">
@@ -132,7 +132,7 @@ export default function ApprovalRequests() {
 						</div>
 					</div>
 					<div className="flex flex-col gap-3 rounded-lg border border-black/10 bg-[rgba(224,234,242,0.3)] p-4 text-center">
-						<div className="font-serif text-2xl font-bold text-[#1f2a34]">
+						<div className="text-2xl font-bold text-[#1f2a34]">
 							{rejectedCount}
 						</div>
 						<div className="text-xs font-semibold uppercase tracking-[0.05em] text-[#5d6a78]">
@@ -150,7 +150,7 @@ export default function ApprovalRequests() {
 				) : requests.length === 0 ? (
 					<div className="flex min-h-[280px] flex-col items-center justify-center gap-4 p-8 text-center">
 						<div className="text-4xl text-[#1f2a34]">✓</div>
-						<div className="font-serif text-lg font-semibold text-[#1f2a34]">
+						<div className="text-lg font-semibold text-[#1f2a34]">
 							All caught up!
 						</div>
 						<div className="text-sm text-[#5d6a78]">

@@ -59,7 +59,7 @@ export default function QueriesPage() {
 			{/* Header */}
 			<div>
 				<div className="flex flex-col gap-2">
-					<h1 className="font-serif text-3xl font-semibold text-[#1f2a34]">
+					<h1 className="text-3xl font-semibold text-[#1f2a34]">
 						Client Questions
 					</h1>
 					<p className="text-sm text-[#5d6a78]">

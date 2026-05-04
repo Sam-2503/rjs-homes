@@ -84,12 +84,12 @@ export default function BuilderMaterials() {
 		<>
 			{/* Topbar */}
 			<div className="flex items-center justify-between border-b border-black/10 bg-[rgba(224,234,242,0.3)] px-6 py-4">
-				<div className="font-serif text-2xl font-semibold text-[#1f2a34]">
+				<div className="text-2xl font-semibold text-[#1f2a34]">
 					Materials Inventory
 				</div>
 				<div className="flex items-center gap-2">
 					<span className="text-xs text-[#888888]">Total Cost:</span>
-					<span className="font-serif text-xl text-brand-gold">
+					<span className="text-xl text-brand-gold">
 						₹{totalCost.toLocaleString()}
 					</span>
 				</div>
@@ -246,7 +246,7 @@ export default function BuilderMaterials() {
 								{filteredMaterials.length} material
 								{filteredMaterials.length !== 1 ? "s" : ""}
 							</span>
-							<span className="font-serif text-lg text-brand-gold">
+							<span className="text-lg text-brand-gold">
 								Total: ₹{totalCost.toLocaleString()}
 							</span>
 						</div>

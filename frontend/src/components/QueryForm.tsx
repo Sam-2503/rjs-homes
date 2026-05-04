@@ -47,7 +47,7 @@ export default function QueryForm({
 	return (
 		<Card className="mb-6 border-black/10 bg-[rgba(224,234,242,0.3)]">
 			<form onSubmit={handleSubmit} className="flex flex-col gap-5">
-				<h3 className="font-serif text-xl font-semibold text-[#1f2a34]">
+				<h3 className="text-xl font-semibold text-[#1f2a34]">
 					Ask a Question
 				</h3>
 

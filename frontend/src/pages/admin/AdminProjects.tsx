@@ -54,7 +54,7 @@ export default function AdminProjects() {
 	return (
 		<div className="flex flex-col gap-6 p-6 max-md:p-4">
 			<div className="mb-2 flex flex-col gap-2">
-				<h1 className="font-serif text-[1.75rem] font-semibold text-[#1f2a34] max-md:text-2xl">
+				<h1 className="text-[1.75rem] font-semibold text-[#1f2a34] max-md:text-2xl">
 					All Projects
 				</h1>
 				<p className="text-sm text-[#5d6a78]">
@@ -103,7 +103,7 @@ export default function AdminProjects() {
 			) : filteredProjects.length === 0 ? (
 				<div className="flex min-h-[280px] flex-col items-center justify-center gap-4 rounded-lg border border-black/10 bg-[rgba(224,234,242,0.3)] px-6 py-12 text-center">
 					<div className="text-4xl">📋</div>
-					<div className="font-serif text-lg font-semibold text-[#1f2a34]">
+					<div className="text-lg font-semibold text-[#1f2a34]">
 						No projects found
 					</div>
 					<div className="text-sm text-[#5d6a78]">
@@ -125,7 +125,7 @@ export default function AdminProjects() {
 						>
 							<div className="flex items-start justify-between gap-3">
 								<div className="min-w-0 flex-1">
-									<h3 className="mb-1 font-serif text-lg font-semibold text-[#1f2a34]">
+									<h3 className="mb-1 text-lg font-semibold text-[#1f2a34]">
 										{project.name}
 									</h3>
 									{project.location && (

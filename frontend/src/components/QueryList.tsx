@@ -35,7 +35,7 @@ export default function QueryList({
 				<Card>
 					<div className="flex flex-col items-center justify-center gap-4 px-8 py-12 text-center">
 						<div className="text-5xl leading-none">💬</div>
-						<div className="font-serif text-lg font-semibold text-[#1f2a34]">
+						<div className="text-lg font-semibold text-[#1f2a34]">
 							No questions yet
 						</div>
 						<div className="text-sm text-[#5d6a78]">
@@ -60,7 +60,7 @@ export default function QueryList({
 						hoverable={!!onSelect}
 					>
 						<div className="mb-4 flex items-start justify-between gap-3 max-md:flex-col">
-							<h3 className="font-serif text-lg font-semibold text-[#1f2a34] max-md:text-base">
+							<h3 className="text-lg font-semibold text-[#1f2a34] max-md:text-base">
 								{query.question}
 							</h3>
 							<Badge status={STATUS_BADGE[query.status]}>

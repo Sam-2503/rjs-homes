@@ -74,7 +74,7 @@ export default function ClientProjectDetail() {
 	if (loading) {
 		return (
 			<div className="border-b border-black/10 bg-[linear-gradient(160deg,rgba(243,247,250,0.4)_0%,rgba(238,243,246,0.4)_100%)] px-6 py-6 backdrop-blur-sm">
-				<div className="font-serif text-3xl font-semibold text-[#1f2a34]">
+				<div className="text-3xl font-semibold text-[#1f2a34]">
 					Loading project...
 				</div>
 			</div>
@@ -88,7 +88,7 @@ export default function ClientProjectDetail() {
 					<div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-[rgba(239,68,68,0.15)] text-lg font-semibold text-[#f97316]">
 						•
 					</div>
-					<div className="font-serif text-2xl font-semibold text-[#1f2a34]">
+					<div className="text-2xl font-semibold text-[#1f2a34]">
 						Project Not Found
 					</div>
 					<p className="mt-2 text-sm text-[#5d6a78]">
@@ -117,7 +117,7 @@ export default function ClientProjectDetail() {
 						Back
 					</button>
 					<div className="min-w-0">
-						<div className="font-serif text-3xl font-semibold text-[#1f2a34]">
+						<div className="text-3xl font-semibold text-[#1f2a34]">
 							{project.name}
 						</div>
 						{project.location && (
@@ -168,7 +168,7 @@ export default function ClientProjectDetail() {
 									>
 										<div className="mb-4 flex items-start justify-between gap-4 max-md:flex-col">
 											<div>
-												<h3 className="mb-2 font-serif text-xl font-semibold text-[#1f2a34]">
+												<h3 className="mb-2 text-xl font-semibold text-[#1f2a34]">
 													{update.title}
 												</h3>
 												<div className="flex flex-wrap gap-4 text-sm text-[#5d6a78]">
@@ -231,7 +231,7 @@ export default function ClientProjectDetail() {
 							onSubmit={handleSubmitQuery}
 							className="rounded-2xl border border-black/10 bg-[rgba(224,234,242,0.3)] p-5 backdrop-blur-sm"
 						>
-							<h3 className="mb-4 font-serif text-xl font-semibold text-[#1f2a34]">
+							<h3 className="mb-4 text-xl font-semibold text-[#1f2a34]">
 								Ask a Question
 							</h3>
 							<textarea
@@ -274,7 +274,7 @@ export default function ClientProjectDetail() {
 									>
 										<div className="mb-4 flex items-start justify-between gap-4 max-md:flex-col">
 											<div className="min-w-0">
-												<h3 className="mb-2 font-serif text-lg font-semibold text-[#1f2a34]">
+												<h3 className="mb-2 text-lg font-semibold text-[#1f2a34]">
 													{query.question}
 												</h3>
 												<div className="text-sm text-[#5d6a78]">

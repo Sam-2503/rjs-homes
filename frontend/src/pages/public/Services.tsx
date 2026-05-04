@@ -4,7 +4,7 @@ export default function Services() {
 	const navigate = useNavigate();
 
 	const sectionHeaderClass =
-		"mx-auto mb-16 max-w-[700px] text-center [&>h2]:mb-4 [&>h2]:font-serif [&>h2]:text-5xl [&>h2]:font-bold [&>h2]:text-white [&>p]:text-[1.05rem] [&>p]:leading-[1.6] [&>p]:text-[#999]";
+		"mx-auto mb-16 max-w-[700px] text-center [&>h2]:mb-4 [&>h2]:[&>h2]:text-5xl [&>h2]:font-bold [&>h2]:text-white [&>p]:text-[1.05rem] [&>p]:leading-[1.6] [&>p]:text-[#999]";
 	const primaryButtonClass =
 		"border-0 bg-[#8b3a2a] px-7 py-3 text-[0.8rem] font-medium uppercase tracking-[0.08em] text-[#fdfaf5] transition hover:bg-[#b35942]";
 	const outlineButtonClass =
@@ -161,7 +161,7 @@ export default function Services() {
 					<div className="mb-6 flex items-center gap-3 text-[0.72rem] font-medium uppercase tracking-[0.2em] text-[#c4763e] before:h-px before:w-8 before:bg-[#c4763e] before:content-['']">
 						Complete Post-Civil Solutions
 					</div>
-					<h1 className="mb-2 font-serif text-[clamp(3rem,5.5vw,5.5rem)] font-light leading-[1.08] text-white">
+					<h1 className="mb-2 text-[clamp(3rem,5.5vw,5.5rem)] font-light leading-[1.08] text-white">
 						From Raw Space
 						<br />
 						<span className="italic text-[#c4763e]">
@@ -188,7 +188,7 @@ export default function Services() {
 				<div className="relative z-[2] flex items-center justify-center px-4 py-16 md:px-8">
 					<div className="grid grid-cols-1 gap-8 md:grid-cols-2">
 						<div className="border border-[rgba(255,255,255,0.1)] bg-[rgba(255,255,255,0.05)] px-6 py-8 text-center backdrop-blur-[10px]">
-							<div className="mb-2 font-serif text-[2.5rem] font-bold leading-none text-[#c4763e]">
+							<div className="mb-2 text-[2.5rem] font-bold leading-none text-[#c4763e]">
 								500+
 							</div>
 							<div className="text-[0.75rem] uppercase tracking-[0.1em] text-[#aaa]">
@@ -196,7 +196,7 @@ export default function Services() {
 							</div>
 						</div>
 						<div className="border border-[rgba(255,255,255,0.1)] bg-[rgba(255,255,255,0.05)] px-6 py-8 text-center backdrop-blur-[10px]">
-							<div className="mb-2 font-serif text-[2.5rem] font-bold leading-none text-[#c4763e]">
+							<div className="mb-2 text-[2.5rem] font-bold leading-none text-[#c4763e]">
 								15+
 							</div>
 							<div className="text-[0.75rem] uppercase tracking-[0.1em] text-[#aaa]">
@@ -204,7 +204,7 @@ export default function Services() {
 							</div>
 						</div>
 						<div className="border border-[rgba(255,255,255,0.1)] bg-[rgba(255,255,255,0.05)] px-6 py-8 text-center backdrop-blur-[10px]">
-							<div className="mb-2 font-serif text-[2.5rem] font-bold leading-none text-[#c4763e]">
+							<div className="mb-2 text-[2.5rem] font-bold leading-none text-[#c4763e]">
 								99%
 							</div>
 							<div className="text-[0.75rem] uppercase tracking-[0.1em] text-[#aaa]">
@@ -212,7 +212,7 @@ export default function Services() {
 							</div>
 						</div>
 						<div className="border border-[rgba(255,255,255,0.1)] bg-[rgba(255,255,255,0.05)] px-6 py-8 text-center backdrop-blur-[10px]">
-							<div className="mb-2 font-serif text-[2.5rem] font-bold leading-none text-[#c4763e]">
+							<div className="mb-2 text-[2.5rem] font-bold leading-none text-[#c4763e]">
 								100%
 							</div>
 							<div className="text-[0.75rem] uppercase tracking-[0.1em] text-[#aaa]">
@@ -243,7 +243,7 @@ export default function Services() {
 							className="border border-[rgba(255,255,255,0.08)] bg-[rgba(255,255,255,0.03)] px-8 py-10 text-center transition duration-300 hover:-translate-y-1 hover:border-[#c4763e] hover:bg-[rgba(255,255,255,0.06)]"
 						>
 							<div className="mb-4 text-5xl">{service.icon}</div>
-							<h3 className="mb-2 font-serif text-3xl text-white">
+							<h3 className="mb-2 text-3xl text-white">
 								{service.title}
 							</h3>
 							<p className="mb-6 text-[0.95rem] leading-[1.6] text-[#aaa]">
@@ -273,7 +273,7 @@ export default function Services() {
 
 				<div className="mx-auto grid max-w-[1200px] grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-5">
 					<div className="with-arrow border border-[rgba(255,255,255,0.05)] bg-[rgba(255,255,255,0.02)] p-8 text-center">
-						<div className="mb-4 font-serif text-5xl font-bold text-[#c4763e]">
+						<div className="mb-4 text-5xl font-bold text-[#c4763e]">
 							01
 						</div>
 						<h4 className="mb-2 text-[1.1rem] text-white">
@@ -285,7 +285,7 @@ export default function Services() {
 						</p>
 					</div>
 					<div className="with-arrow border border-[rgba(255,255,255,0.05)] bg-[rgba(255,255,255,0.02)] p-8 text-center">
-						<div className="mb-4 font-serif text-5xl font-bold text-[#c4763e]">
+						<div className="mb-4 text-5xl font-bold text-[#c4763e]">
 							02
 						</div>
 						<h4 className="mb-2 text-[1.1rem] text-white">
@@ -297,7 +297,7 @@ export default function Services() {
 						</p>
 					</div>
 					<div className="with-arrow border border-[rgba(255,255,255,0.05)] bg-[rgba(255,255,255,0.02)] p-8 text-center">
-						<div className="mb-4 font-serif text-5xl font-bold text-[#c4763e]">
+						<div className="mb-4 text-5xl font-bold text-[#c4763e]">
 							03
 						</div>
 						<h4 className="mb-2 text-[1.1rem] text-white">
@@ -309,7 +309,7 @@ export default function Services() {
 						</p>
 					</div>
 					<div className="with-arrow border border-[rgba(255,255,255,0.05)] bg-[rgba(255,255,255,0.02)] p-8 text-center">
-						<div className="mb-4 font-serif text-5xl font-bold text-[#c4763e]">
+						<div className="mb-4 text-5xl font-bold text-[#c4763e]">
 							04
 						</div>
 						<h4 className="mb-2 text-[1.1rem] text-white">
@@ -320,7 +320,7 @@ export default function Services() {
 						</p>
 					</div>
 					<div className="border border-[rgba(255,255,255,0.05)] bg-[rgba(255,255,255,0.02)] p-8 text-center">
-						<div className="mb-4 font-serif text-5xl font-bold text-[#c4763e]">
+						<div className="mb-4 text-5xl font-bold text-[#c4763e]">
 							05
 						</div>
 						<h4 className="mb-2 text-[1.1rem] text-white">
@@ -373,7 +373,7 @@ export default function Services() {
 
 			{/* CTA SECTION */}
 			<section className="bg-[linear-gradient(135deg,rgba(139,58,42,0.2)_0%,rgba(196,118,62,0.1)_100%)] px-4 py-20 text-center md:px-[5vw]">
-				<h2 className="mb-4 font-serif text-5xl text-white">
+				<h2 className="mb-4 text-5xl text-white">
 					Ready to Transform Your Space?
 				</h2>
 				<p className="mb-8 text-[1.1rem] text-[#aaa]">

@@ -103,7 +103,7 @@ export default function AdminDashboard() {
 	return (
 		<div className="flex flex-col gap-6 p-6 max-md:p-4">
 			<div className="mb-2 flex flex-col gap-2">
-				<h1 className="font-serif text-[1.75rem] font-semibold text-[#1f2a34] max-md:text-2xl">
+				<h1 className="text-[1.75rem] font-semibold text-[#1f2a34] max-md:text-2xl">
 					Admin Dashboard
 				</h1>
 				<p className="text-sm text-[#5d6a78]">
@@ -121,7 +121,7 @@ export default function AdminDashboard() {
 					<div className="text-xs font-semibold uppercase tracking-[0.05em] text-[#5d6a78]">
 						Total Projects
 					</div>
-					<div className="font-serif text-[1.75rem] font-bold text-[#1f2a34]">
+					<div className="text-[1.75rem] font-bold text-[#1f2a34]">
 						{stats.totalProjects}
 					</div>
 					<div className="h-1 overflow-hidden rounded-sm bg-black/5">
@@ -143,7 +143,7 @@ export default function AdminDashboard() {
 					<div className="text-xs font-semibold uppercase tracking-[0.05em] text-[#5d6a78]">
 						Active Projects
 					</div>
-					<div className="font-serif text-[1.75rem] font-bold text-[#1f2a34]">
+					<div className="text-[1.75rem] font-bold text-[#1f2a34]">
 						{stats.activeProjects}
 					</div>
 					<div className="text-sm text-[#5d6a78]">
@@ -165,7 +165,7 @@ export default function AdminDashboard() {
 					<div className="text-xs font-semibold uppercase tracking-[0.05em] text-[#5d6a78]">
 						Completed
 					</div>
-					<div className="font-serif text-[1.75rem] font-bold text-[#1f2a34]">
+					<div className="text-[1.75rem] font-bold text-[#1f2a34]">
 						{stats.completedProjects}
 					</div>
 					<div className="text-sm text-[#5d6a78]">✓</div>
@@ -180,7 +180,7 @@ export default function AdminDashboard() {
 					<div className="text-xs font-semibold uppercase tracking-[0.05em] text-[#5d6a78]">
 						Pending Approvals
 					</div>
-					<div className="font-serif text-[1.75rem] font-bold text-[#1f2a34]">
+					<div className="text-[1.75rem] font-bold text-[#1f2a34]">
 						{stats.pendingRequests}
 					</div>
 					<div>
@@ -202,7 +202,7 @@ export default function AdminDashboard() {
 					<div className="text-xs font-semibold uppercase tracking-[0.05em] text-[#5d6a78]">
 						Builders
 					</div>
-					<div className="font-serif text-[1.75rem] font-bold text-[#1f2a34]">
+					<div className="text-[1.75rem] font-bold text-[#1f2a34]">
 						{stats.totalBuilders}
 					</div>
 					<div className="text-sm text-[#5d6a78]">Approved</div>
@@ -217,7 +217,7 @@ export default function AdminDashboard() {
 					<div className="text-xs font-semibold uppercase tracking-[0.05em] text-[#5d6a78]">
 						Clients
 					</div>
-					<div className="font-serif text-[1.75rem] font-bold text-[#1f2a34]">
+					<div className="text-[1.75rem] font-bold text-[#1f2a34]">
 						{stats.totalClients}
 					</div>
 					<div className="text-sm text-[#5d6a78]">Registered</div>
@@ -226,7 +226,7 @@ export default function AdminDashboard() {
 
 			<div className="rounded-lg border border-black/10 bg-[rgba(224,234,242,0.3)] p-4">
 				<div className="mb-4 flex items-center justify-between gap-4 border-b border-black/10 pb-4 max-md:flex-col max-md:items-start">
-					<h2 className="font-serif text-xl font-semibold text-[#1f2a34]">
+					<h2 className="text-xl font-semibold text-[#1f2a34]">
 						Recent Projects
 					</h2>
 					<a
@@ -249,7 +249,7 @@ export default function AdminDashboard() {
 								className="grid grid-cols-1 gap-4 rounded-md border border-black/10 bg-black/5 p-4 transition-all duration-300 hover:border-black/20 hover:bg-black/5 lg:grid-cols-[minmax(0,1fr)_200px_150px] max-lg:grid-cols-[minmax(0,1fr)_100px] max-md:grid-cols-1"
 							>
 								<div className="min-w-0">
-									<h3 className="mb-1 font-serif text-lg font-semibold text-[#1f2a34]">
+									<h3 className="mb-1 text-lg font-semibold text-[#1f2a34]">
 										{project.name}
 									</h3>
 									<p className="text-sm text-[#5d6a78]">

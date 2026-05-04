@@ -72,7 +72,7 @@ export default function BuilderUpdates() {
 		<>
 			{/* Topbar */}
 			<div className="border-b border-black/10 bg-[#f8fafb] px-6 py-6 backdrop-blur-sm">
-				<div className="font-serif text-3xl font-semibold text-[#1f2a34]">
+				<div className="text-3xl font-semibold text-[#1f2a34]">
 					Recent Updates
 				</div>
 			</div>
